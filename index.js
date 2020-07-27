@@ -16,11 +16,11 @@ app.use(bodyparser.json()); //allow us to parse the body of the request message 
 
 
 app.use('/dishes', dishrouter);
-app.use('/dishes/:dishId', dishrouter);
+//app.use('/dishes/:dishId', dishrouter);
 app.use('/promotions', promorouter);
-app.use('/promotions/:promoid', promorouter);
+//app.use('/promotions/:promoid', promorouter);
 app.use('/leaders', leaderRouter);
-app.use('/leaders/:leaderid', leaderRouter);
+//app.use('/leaders/:leaderid', leaderRouter);
 
 app.use(express.static(__dirname+ '/public'));
 
